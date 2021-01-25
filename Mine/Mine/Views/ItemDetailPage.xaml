@@ -12,11 +12,10 @@
         <Label Text="{Binding Item.Text}" d:Text="Item name" FontSize="Small"/>
 
         <Label Text="Description:" FontSize="Medium" />
+        <Label Text="{Binding Item.Description}" d:Text="Item Description" FontSize="Small"/>
 
         <Label Text="Value:" FontSize="Medium" />
         <Label Text="{Binding Item.Value}" d:Text="Item Value" FontSize="Small"/>
-
-        <Label Text="{Binding Item.Description}" d:Text="Item description" FontSize="Small"/>
     </StackLayout>
     
 </ContentPage>
