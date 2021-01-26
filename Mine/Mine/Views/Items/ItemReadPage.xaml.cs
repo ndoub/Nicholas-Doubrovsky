@@ -13,9 +13,9 @@ namespace Mine.Views
     [DesignTimeVisible(false)]
     public partial class ItemsReadPage : ContentPage
     {
-        ItemDetailViewModel viewModel;
+        ItemReadViewModel viewModel;
 
-        public ItemsReadPage(ItemDetailViewModel viewModel)
+        public ItemsReadPage(ItemReadViewModel viewModel)
         {
             InitializeComponent();
 
@@ -32,7 +32,7 @@ namespace Mine.Views
                 Description = "This is an item description."
             };
 
-            viewModel = new ItemDetailViewModel(item);
+            viewModel = new ItemReadViewModel(item);
             BindingContext = viewModel;
         }
     }
