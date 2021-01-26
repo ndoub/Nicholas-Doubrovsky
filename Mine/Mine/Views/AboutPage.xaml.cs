@@ -10,9 +10,12 @@ namespace Mine.Views
     [DesignTimeVisible(false)]
     public partial class AboutPage : ContentPage
     {
+        //sets the date and time on AboutPage to the current date and time
         public AboutPage()
         {
             InitializeComponent();
+
+            CurrentDateTimeLabel.Text = System.DateTime.Now.ToString("MM/dd/yy hh:mm:ss");
         }
     }
 }
