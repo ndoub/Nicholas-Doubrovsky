@@ -8,7 +8,7 @@
              Title="{Binding Title}">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Delete" Clicked="DeleteItem_Clicked" IconImageSource="icon_add.png"/>
+        <ToolbarItem Text="Delete" Clicked="DeleteItem_Clicked" IconImageSource="icon_delete.png"/>
         <ToolbarItem Text="Update" Clicked="UpdateItem_Clicked" IconImageSource="icon_update.png"/>
     </ContentPage.ToolbarItems>
 
