@@ -29,18 +29,14 @@ namespace UnitTests.Models
 
             //Act
             var result = new HomeMenuItem();
-            result.Description = "Description";
-            result.Id = "ID";
-            result.Text = "Text";
-            result.Value = 1;
+            result.Id = MenuItemType.Game;
+            result.Title = "Title";
 
             //Reset
 
             //Assert
-            Assert.AreEqual("Description", result.Description);
-            Assert.AreEqual("ID", result.Id);
-            Assert.AreEqual("Text", result.Text);
-            Assert.AreEqual(1, result.Value);
+            Assert.AreEqual(MenuItemType.Game, result.Id);
+            Assert.AreEqual("Title", result.Title);
         }
     }
 }
