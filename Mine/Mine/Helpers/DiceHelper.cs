@@ -21,6 +21,10 @@ namespace Mine.Helpers
 
             if (ForceRollsToNotRandom)
             {
+                if(ForcedRandomValue < 0)
+                {
+                    return 0;
+                }
                 return rolls * ForcedRandomValue;
             }
 
