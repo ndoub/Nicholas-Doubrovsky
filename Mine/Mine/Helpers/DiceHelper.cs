@@ -14,17 +14,17 @@ namespace Mine.Helpers
 
         public static int RollDice(int rolls, int dice)
         {
-            if(ForceRollsToNotRandom)
-            {
-                return rolls * ForcedRandomValue;
-            }
-
             if(rolls < 1)
             {
                 return 0;
             }
 
-            if(dice < 1)
+            if (ForceRollsToNotRandom)
+            {
+                return rolls * ForcedRandomValue;
+            }
+
+            if (dice < 1)
             {
                 return 0;
             }
